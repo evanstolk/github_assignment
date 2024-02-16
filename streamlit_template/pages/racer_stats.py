@@ -6,7 +6,7 @@ st.sidebar.markdown("# Racer Page 🎈")
 
 st.write(' # Mariokart *Stats Website*') # "write" is like streamlit's version of print
 
-df_racer = pd.read_csv('data/racer_stats.csv') # read the csv file with panda
+df_racer = pd.read_csv('streamlit_template/data/racer_stats.csv') # read the csv file with panda
 
 # st.write(df_racer) # this option will load in the entire dataset
 
@@ -68,7 +68,7 @@ with right_column_2:
     st.write(description) 
 
 with left_column_2:
-    st.image(f"images/{chosen}.png", width = 200) # This will select an image and it will look for an image with the title of chosen + .png
+    st.image(f"streamlit_template/images/{chosen}.png", width = 200) # This will select an image and it will look for an image with the title of chosen + .png
 
 
 df_single_racer = df_racer.loc[df_racer['Character'] == chosen].drop(columns = ['Character', 'Times First Place', 'Total Races']) # This will first validate if and display the data only for the character in the dataset that's equal to chosen. Then, it will show all of the available info except for those columns
