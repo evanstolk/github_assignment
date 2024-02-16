@@ -5,5 +5,5 @@ st.sidebar.markdown("# Main Page")
 
 st.write("Click on a page to see kart stats")
 
-link = '<a href="https://evanstolk.github.io/github_assignment" target="_blank"></a>'
+link = '<a href="https://evanstolk.github.io/github_assignment" target="_blank">My Github Site</a>'
 st.markdown(link, unsafe_allow_html=True)
